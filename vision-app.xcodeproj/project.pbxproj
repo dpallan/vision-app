@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		8CA6AA1720A936350064D3E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA6AA1620A936350064D3E7 /* AppDelegate.swift */; };
-		8CA6AA1920A936350064D3E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA6AA1820A936350064D3E7 /* ViewController.swift */; };
+		8CA6AA1920A936350064D3E7 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA6AA1820A936350064D3E7 /* CameraVC.swift */; };
 		8CA6AA1C20A936350064D3E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA6AA1A20A936350064D3E7 /* Main.storyboard */; };
 		8CA6AA1E20A936380064D3E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CA6AA1D20A936380064D3E7 /* Assets.xcassets */; };
 		8CA6AA2120A936380064D3E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA6AA1F20A936380064D3E7 /* LaunchScreen.storyboard */; };
+		8CA6AA2C20A93C570064D3E7 /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA6AA2B20A93C570064D3E7 /* RoundedShadowView.swift */; };
+		8CA6AA2E20A93E6B0064D3E7 /* RoundedShadowBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA6AA2D20A93E6B0064D3E7 /* RoundedShadowBtn.swift */; };
+		8CA6AA3020A93EFB0064D3E7 /* RoundedShadowImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA6AA2F20A93EFB0064D3E7 /* RoundedShadowImageView.swift */; };
+		8CBE95FB20A9564B00F92E17 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8CBE95FA20A9564B00F92E17 /* SqueezeNet.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8CA6AA1320A936340064D3E7 /* vision-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vision-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CA6AA1620A936350064D3E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8CA6AA1820A936350064D3E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8CA6AA1820A936350064D3E7 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		8CA6AA1B20A936350064D3E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CA6AA1D20A936380064D3E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CA6AA2020A936380064D3E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CA6AA2220A936380064D3E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CA6AA2B20A93C570064D3E7 /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
+		8CA6AA2D20A93E6B0064D3E7 /* RoundedShadowBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowBtn.swift; sourceTree = "<group>"; };
+		8CA6AA2F20A93EFB0064D3E7 /* RoundedShadowImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowImageView.swift; sourceTree = "<group>"; };
+		8CBE95FA20A9564B00F92E17 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,42 @@
 		8CA6AA1520A936340064D3E7 /* vision-app */ = {
 			isa = PBXGroup;
 			children = (
+				8CA6AA2A20A9368C0064D3E7 /* Resources */,
+				8CA6AA2920A9367F0064D3E7 /* View */,
+				8CA6AA2820A936640064D3E7 /* Controller */,
 				8CA6AA1620A936350064D3E7 /* AppDelegate.swift */,
-				8CA6AA1820A936350064D3E7 /* ViewController.swift */,
+				8CA6AA1820A936350064D3E7 /* CameraVC.swift */,
 				8CA6AA1A20A936350064D3E7 /* Main.storyboard */,
 				8CA6AA1D20A936380064D3E7 /* Assets.xcassets */,
 				8CA6AA1F20A936380064D3E7 /* LaunchScreen.storyboard */,
 				8CA6AA2220A936380064D3E7 /* Info.plist */,
 			);
 			path = "vision-app";
+			sourceTree = "<group>";
+		};
+		8CA6AA2820A936640064D3E7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8CA6AA2920A9367F0064D3E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8CA6AA2B20A93C570064D3E7 /* RoundedShadowView.swift */,
+				8CA6AA2D20A93E6B0064D3E7 /* RoundedShadowBtn.swift */,
+				8CA6AA2F20A93EFB0064D3E7 /* RoundedShadowImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8CA6AA2A20A9368C0064D3E7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8CBE95FA20A9564B00F92E17 /* SqueezeNet.mlmodel */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CA6AA1920A936350064D3E7 /* ViewController.swift in Sources */,
+				8CA6AA2E20A93E6B0064D3E7 /* RoundedShadowBtn.swift in Sources */,
+				8CBE95FB20A9564B00F92E17 /* SqueezeNet.mlmodel in Sources */,
+				8CA6AA1920A936350064D3E7 /* CameraVC.swift in Sources */,
 				8CA6AA1720A936350064D3E7 /* AppDelegate.swift in Sources */,
+				8CA6AA2C20A93C570064D3E7 /* RoundedShadowView.swift in Sources */,
+				8CA6AA3020A93EFB0064D3E7 /* RoundedShadowImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
